@@ -9,6 +9,8 @@ public class VerticalMover : MonoBehaviour
     [SerializeField] float pauseTime = 1f;
     [SerializeField] bool debugMode = false;
 
+    [SerializeField] Vector3 movementDirection = Vector3.up;
+
     bool goingUp = true;
     bool isPaused = false;
 
@@ -66,11 +68,25 @@ public class VerticalMover : MonoBehaviour
     {
         if (goingUp)
         {
-            transform.Translate(Vector3.up * speed * Time.deltaTime);
+            transform.Translate(movementDirection * speed * Time.deltaTime);
         }
         else
         {
-            transform.Translate(Vector3.down * speed * Time.deltaTime);
+            transform.Translate(-movementDirection * speed * Time.deltaTime);
+        }
+    }
+
+    private void OnCollisionEnter(Collision other) {
+        if(other.gameObject.tag == "Player")
+        {
+            other.gameObject.transform.parent = transform;
+        }
+    }
+
+    private void OnCollisionExit(Collision other) {
+        if(other.gameObject.tag == "Player")
+        {
+            other.gameObject.transform.parent = null;
         }
     }
 }

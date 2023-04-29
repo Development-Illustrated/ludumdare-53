@@ -518,13 +518,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 5
-  maxHeight: 10
-  minHeight: 1
+  maxHeight: 20
+  minHeight: 5
   pauseTime: 1
   debugMode: 0
-  goingUp: 1
-  isPaused: 0
-  timePaused: 0
+  movementDirection: {x: 0, y: 0, z: 1}
 --- !u!1 &720118991
 GameObject:
   m_ObjectHideFlags: 0
@@ -734,9 +732,7 @@ MonoBehaviour:
   minHeight: 0
   pauseTime: 1
   debugMode: 1
-  goingUp: 1
-  isPaused: 0
-  timePaused: 0
+  movementDirection: {x: 0, y: 1, z: 0}
 --- !u!65 &847408341
 BoxCollider:
   m_ObjectHideFlags: 0
