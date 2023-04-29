@@ -7,7 +7,7 @@ public class PackageController : MonoBehaviour
     Vector2 moveInput = Vector2.zero;
     Camera cam;
     Rigidbody rb;
-    [SerializeField] float speed = 45f;
+    [SerializeField] float torqueForce = 45f;
     [SerializeField] float maxAngularVelocity = 5f;
 
     private void Awake() {
@@ -26,8 +26,7 @@ public class PackageController : MonoBehaviour
         Vector3 targetDirection = new Vector3(inputy, 0f, -inputx);
         targetDirection = cam.transform.TransformDirection(targetDirection);
         targetDirection.y = 0.0f;
-        rb.AddTorque(targetDirection * speed, ForceMode.Force);
-        
+        rb.AddTorque(targetDirection * torqueForce, ForceMode.Force);        
     }
 
     public void requestMove(Vector2 input)
