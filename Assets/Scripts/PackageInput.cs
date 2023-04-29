@@ -5,6 +5,7 @@ using UnityEngine.InputSystem;
 
 public class PackageInput : MonoBehaviour
 {
+    [SerializeField] bool debugMode;
 
     PackageController packageController;
     
@@ -14,7 +15,11 @@ public class PackageInput : MonoBehaviour
 
     public void OnMove(InputValue value)
     {
-        Debug.Log("OnMove called");
+        if(debugMode)
+        {
+            Debug.Log("OnMove called");
+        }
+        
         packageController.requestMove(value.Get<Vector2>());
     }
 }
