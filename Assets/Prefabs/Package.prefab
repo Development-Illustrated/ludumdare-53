@@ -63,7 +63,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 147846ee93abdb648beaf75cd97befa3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 100
+  torqueForce: 150
   maxAngularVelocity: 5
 --- !u!114 &7130500630563776190
 MonoBehaviour:

@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class MovementScript : MonoBehaviour
+public class IMove : MonoBehaviour
 {
 
     [SerializeField] float speed = 5f;
@@ -87,20 +87,6 @@ public class MovementScript : MonoBehaviour
         else
         {
             transform.Translate(-movementDirection * speed * Time.deltaTime);
-        }
-    }
-
-    private void OnCollisionEnter(Collision other) {
-        if(other.gameObject.tag == "Player")
-        {
-            other.gameObject.transform.parent = transform;
-        }
-    }
-
-    private void OnCollisionExit(Collision other) {
-        if(other.gameObject.tag == "Player")
-        {
-            other.gameObject.transform.parent = null;
         }
     }
 }
