@@ -22,10 +22,10 @@ public class PackageBehaviour : MonoBehaviour
 
     void Update()
     {
-        // if(isPowerupActive && (Time.time > powerupInitiated + powerupTimeout))
-        // {
-        //     Reset();
-        // }
+        if(isPowerupActive && (Time.time > powerupInitiated + powerupTimeout))
+        {
+            Reset();
+        }
 
         if (Input.GetKeyDown(KeyCode.Space))
         {

@@ -198,6 +198,62 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 64283779}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &126879617
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 126879618}
+  - component: {fileID: 126879619}
+  m_Layer: 0
+  m_Name: BallSpaffer
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &126879618
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 126879617}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 543450652370358080}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &126879619
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 126879617}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ab3da0c37342b284595cbd1524ec01ef, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ballPrefabs: []
+  ballSpawnHeight: 3
+  ballSpawnDistance: 3
+  ballSpawnForce: 100
+  ballSpawnTorque: 100
+  ballSpawnRate: 0.5
+  ballSpawnMax: 100
+  ballSpawnMaxDelay: 5
+  ballSpawnMinDelay: 0.1
+  ballSpawnDelayDecrease: 0.1
+  ballSpawnMaxForce: 100
+  ballSpawnMaxTorque: 100
 --- !u!1001 &153856408
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1083,7 +1139,7 @@ PrefabInstance:
     - target: {fileID: 3036275980711849884, guid: 1ea069ededc149d4e9628d8aee50cf6d,
         type: 3}
       propertyPath: m_RootOrder
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 3036275980711849884, guid: 1ea069ededc149d4e9628d8aee50cf6d,
         type: 3}
@@ -1524,7 +1580,7 @@ PrefabInstance:
     - target: {fileID: 7178559800710505250, guid: 2b1a1799fca2744448f328ffc92ba05c,
         type: 3}
       propertyPath: m_RootOrder
-      value: 3
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 7178559800710505250, guid: 2b1a1799fca2744448f328ffc92ba05c,
         type: 3}
@@ -1737,7 +1793,7 @@ PrefabInstance:
     - target: {fileID: 1833333002791335139, guid: 94de83cd3a827814fad2251647b0eb00,
         type: 3}
       propertyPath: m_RootOrder
-      value: 4
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 1833333002791335139, guid: 94de83cd3a827814fad2251647b0eb00,
         type: 3}
@@ -2151,6 +2207,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ac0b09e7857660247b1477e93731de29, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &919132148379489786 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4148192623830582751, guid: 3493ac8be90837f488567f54e209d0c0,
+    type: 3}
+  m_PrefabInstance: {fileID: 3841639644787396645}
+  m_PrefabAsset: {fileID: 0}
 --- !u!114 &1110790109291304266
 MonoBehaviour:
   m_ObjectHideFlags: 3
@@ -2313,6 +2375,35 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 2811626320428873594}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &3469287838299865318
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 919132148379489786}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ab3da0c37342b284595cbd1524ec01ef, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ballPrefabs:
+  - {fileID: 4364168214758330162, guid: 66e6987cb4e63e849b9cd7d988b9640b, type: 3}
+  - {fileID: 6022164348279230952, guid: 0869d33cc7123eb46ba59dbc15270fff, type: 3}
+  - {fileID: 5935079316200349479, guid: 52b00d9c9a128df42af2b533358e6db3, type: 3}
+  - {fileID: 4704877221067182906, guid: 64d97e2b642382649812581973f4f16c, type: 3}
+  - {fileID: 369856857941409019, guid: 45367be315ddcfd4198ce1c8436e28f8, type: 3}
+  ballSpawnHeight: 3
+  ballSpawnDistance: 3
+  ballSpawnForce: 100
+  ballSpawnTorque: 100
+  ballSpawnRate: 0.5
+  ballSpawnMax: 100
+  ballSpawnMaxDelay: 5
+  ballSpawnMinDelay: 0.1
+  ballSpawnDelayDecrease: 0.1
+  ballSpawnMaxForce: 100
+  ballSpawnMaxTorque: 100
 --- !u!1001 &3841639644787396645
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2389,7 +2480,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 308458637013234050}
-  m_LocalRotation: {x: 0.082867526, y: -0.77425915, z: 0.10368725, w: 0.618793}
+  m_LocalRotation: {x: 0.082867526, y: -0.7742591, z: 0.103687234, w: 0.6187931}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
