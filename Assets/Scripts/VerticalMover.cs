@@ -45,7 +45,6 @@ public class VerticalMover : MonoBehaviour
 
     void checkPause()
     {
-        Debug.Log("Time.deltaTime " + Time.deltaTime);
         if (transform.position.y >= maxHeight && timePaused < pauseTime)
         {
             timePaused += Time.deltaTime;
