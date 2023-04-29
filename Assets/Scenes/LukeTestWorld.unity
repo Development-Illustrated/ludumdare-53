@@ -522,6 +522,8 @@ MonoBehaviour:
   minHeight: 1
   pauseTime: 1
   debugMode: 0
+  startDelay: 0
+  movementDirection: {x: 0, y: 1, z: 0}
 --- !u!1 &720118991
 GameObject:
   m_ObjectHideFlags: 0
@@ -731,6 +733,8 @@ MonoBehaviour:
   minHeight: 0
   pauseTime: 1
   debugMode: 1
+  startDelay: 0
+  movementDirection: {x: 0, y: 1, z: 0}
 --- !u!65 &847408341
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -2161,7 +2165,7 @@ PrefabInstance:
     - target: {fileID: 4369240715432188964, guid: b87e1927cae00664fa9fdafaad29e212,
         type: 3}
       propertyPath: movementSpeed
-      value: 100
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 4369240715432188964, guid: b87e1927cae00664fa9fdafaad29e212,
         type: 3}
