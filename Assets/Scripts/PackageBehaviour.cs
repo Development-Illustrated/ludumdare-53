@@ -61,6 +61,17 @@ public class PackageBehaviour : MonoBehaviour
         }
     }
 
+    public void Fireworks()
+    {
+        if (!isPowerupActive)
+        {
+            isPowerupActive = true;
+            powerupInitiated = Time.time;
+            powerupTimeout = 10f;
+            playerController.ShootUp(100f);
+        }
+    }
+
     public void Reset()
     {
         playerController.Reset();

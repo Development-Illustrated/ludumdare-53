@@ -17,7 +17,8 @@ public class PackageController : MonoBehaviour
         cam = Camera.main;
     }
 
-    private void FixedUpdate() {
+    private void FixedUpdate()
+    {
         rb.maxAngularVelocity = maxAngularVelocity;
         move(moveInput.x, moveInput.y);
     }
@@ -35,9 +36,15 @@ public class PackageController : MonoBehaviour
         moveInput = input;
     }
 
+    public void ShootUp(float jumpForce)
+    {
+        GetComponent<Collider>().material.bounciness = 0.5f;
+        rb.AddForce(new Vector3(0, jumpForce, 0), ForceMode.Impulse);
+    }
+
     public void increaseTorque()
     {
-        //torqueForce *=5;
+        torqueForce *= 2;
         maxAngularVelocity *= 2; 
     }
 
@@ -45,5 +52,6 @@ public class PackageController : MonoBehaviour
     {
         torqueForce = 150f;
         maxAngularVelocity = 5f;
+        GetComponent<Collider>().material.bounciness = 0f;
     }
 }

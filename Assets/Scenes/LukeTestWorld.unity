@@ -1387,7 +1387,7 @@ MonoBehaviour:
   m_ShowCameraFrustum: 1
   m_IgnoreTimeScale: 0
   m_WorldUpOverride: {fileID: 0}
-  m_UpdateMethod: 2
+  m_UpdateMethod: 0
   m_BlendUpdateMethod: 1
   m_DefaultBlend:
     m_Style: 1
@@ -2541,7 +2541,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8477676270931203672}
-  m_LocalRotation: {x: 0.21386568, y: -0.35562453, z: 0.083951555, w: 0.9059497}
+  m_LocalRotation: {x: 0.21386571, y: -0.3556246, z: 0.083951585, w: 0.90594965}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -2618,6 +2618,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Powerup
+      objectReference: {fileID: 0}
+    - target: {fileID: 8002868458438567695, guid: 4b064c25e39ef4da88e89c61d0f4088f,
+        type: 3}
+      propertyPath: powerupName
+      value: Fireworks
       objectReference: {fileID: 0}
     - target: {fileID: 8002868458438567699, guid: 4b064c25e39ef4da88e89c61d0f4088f,
         type: 3}
