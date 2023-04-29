@@ -20,7 +20,7 @@ public class PackageController : MonoBehaviour
 
     void move(float inputx, float inputy)
     {
-        Vector3 targetDirection = new Vector3(inputx, 0f, inputy);
+        Vector3 targetDirection = new Vector3(inputy, 0f, -inputx);
         targetDirection = camera.transform.TransformDirection(targetDirection);
         targetDirection.y = 0.0f;
         rb.AddTorque(targetDirection * speed, ForceMode.Force);
