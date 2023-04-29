@@ -13,9 +13,9 @@ public class ConveyorBelt : MonoBehaviour
     void Update()
     {
         if (!isEnabled) return;
-        if(objOnBelt.Count > 0)
+        if (objOnBelt.Count > 0)
         {
-            for(int i = 0; i < objOnBelt.Count; i++)
+            for (int i = 0; i < objOnBelt.Count; i++)
             {
                 objOnBelt[i].GetComponent<Rigidbody>().AddForce(movementSpeed * direction.x,
                     movementSpeed * direction.y,
@@ -27,7 +27,6 @@ public class ConveyorBelt : MonoBehaviour
 
     private void OnCollisionEnter(Collision collision)
     {
-        if (!isEnabled) return;
         if (collision.gameObject.GetComponent<Rigidbody>())
         {
             objOnBelt.Add(collision.gameObject);
@@ -36,10 +35,14 @@ public class ConveyorBelt : MonoBehaviour
 
     private void OnCollisionExit(Collision collision)
     {
-        if (!isEnabled) return;
         if (collision.gameObject.GetComponent<Rigidbody>())
         {
             objOnBelt.Remove(collision.gameObject);
         }
+    }
+
+    public void TurnOn()
+    {
+        if (!isEnabled) isEnabled = true;
     }
 }

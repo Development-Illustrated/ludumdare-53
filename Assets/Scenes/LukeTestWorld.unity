@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.18028378, g: 0.22571412, b: 0.30692285, a: 1}
+  m_IndirectSpecularColor: {r: 0.18028326, g: 0.22571333, b: 0.30692202, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -1461,7 +1461,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1581206997}
-  m_LocalRotation: {x: 0.16847147, y: -0.359365, z: 0.06613235, w: 0.9154784}
+  m_LocalRotation: {x: 0.16847147, y: -0.359365, z: 0.06613236, w: 0.9154784}
   m_LocalPosition: {x: -16.602346, y: 18.835403, z: 28.72402}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -2261,7 +2261,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 308458637013234050}
-  m_LocalRotation: {x: 0.123554744, y: -0.3621662, z: 0.048500594, w: 0.9226146}
+  m_LocalRotation: {x: 0.12355474, y: -0.36216626, z: 0.0485006, w: 0.9226145}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -2318,7 +2318,7 @@ PrefabInstance:
     - target: {fileID: 4369240715432188964, guid: b87e1927cae00664fa9fdafaad29e212,
         type: 3}
       propertyPath: movementSpeed
-      value: 10
+      value: 1000
       objectReference: {fileID: 0}
     - target: {fileID: 4369240715432188964, guid: b87e1927cae00664fa9fdafaad29e212,
         type: 3}
@@ -2385,6 +2385,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: ConveyorBelt
       objectReference: {fileID: 0}
+    - target: {fileID: 4369240715432188974, guid: b87e1927cae00664fa9fdafaad29e212,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b87e1927cae00664fa9fdafaad29e212, type: 3}
 --- !u!114 &5527295529148033107
@@ -2440,7 +2445,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5635090384359850034}
-  m_LocalRotation: {x: 0.16847147, y: -0.35936496, z: 0.066132344, w: 0.9154784}
+  m_LocalRotation: {x: 0.16847147, y: -0.359365, z: 0.06613235, w: 0.9154784}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -2593,7 +2598,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8477676270931203672}
-  m_LocalRotation: {x: 0.2138657, y: -0.35562456, z: 0.083951555, w: 0.9059497}
+  m_LocalRotation: {x: 0.21386571, y: -0.3556246, z: 0.083951585, w: 0.90594965}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
