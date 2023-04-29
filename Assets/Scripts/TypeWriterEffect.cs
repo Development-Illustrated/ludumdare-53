@@ -22,6 +22,7 @@ public class TypeWriterEffect : MonoBehaviour
 
     public void Clear() {
         text.text = "";
+        audioSource.Stop();
     }
 
     IEnumerator ShowText()

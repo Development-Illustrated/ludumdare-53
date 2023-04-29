@@ -15,6 +15,8 @@ GameObject:
   - component: {fileID: 7178559800710505251}
   - component: {fileID: 7178559800710505249}
   - component: {fileID: 2042234446}
+  - component: {fileID: 1479633887}
+  - component: {fileID: 1479633888}
   m_Layer: 0
   m_Name: Package
   m_TagString: Player
@@ -63,8 +65,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 147846ee93abdb648beaf75cd97befa3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  debugMode: 0
   torqueForce: 150
   maxAngularVelocity: 5
+  acceleration: 100
+  maxSpeed: 10
 --- !u!114 &7130500630563776190
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -77,6 +82,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 13a3748788262b444995beb23846e239, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _healthbar: {fileID: 0}
+  isPowerupActive: 0
+  powerupTimeout: 0
+  powerupInitiated: 0
 --- !u!54 &7178559800710505251
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -105,7 +114,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 62899f850307741f2a39c98a8b639597, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Actions: {fileID: -944628639613478452, guid: ca9f5fa95ffab41fb9a615ab714db018,
+  m_Actions: {fileID: -944628639613478452, guid: 25524db202d45304a97b6369286fc34c,
     type: 3}
   m_NotificationBehavior: 0
   m_UIInputModule: {fileID: 0}
@@ -201,6 +210,37 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 2.0004911, y: 1.5400769, z: 3.4281116}
   m_Center: {x: -0.007241726, y: 0.059793055, z: 0.013714552}
+--- !u!114 &1479633887
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7178559800710505437}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5d4abb8e83d5cb04e90d311dfb5b4832, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  debugMode: 0
+  torqueForce: 150
+  maxAngularVelocity: 5
+  acceleration: 50
+  maxSpeed: 2
+--- !u!114 &1479633888
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7178559800710505437}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e721f599acf490041860b30537f34829, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  initialControllerType: 0
+  debugMode: 0
 --- !u!1001 &7178559800745584915
 PrefabInstance:
   m_ObjectHideFlags: 0
