@@ -8,6 +8,10 @@ public class PackageBehaviour : MonoBehaviour
     PackageController playerController;
 
     [SerializeField] bool isPowerupActive;
+    [SerializeField] bool isWet = false;
+    [SerializeField] int wetDmg = 1;
+    [SerializeField] float wetTimeout = 1f;
+    [SerializeField] float wetInitiated;
     [SerializeField] float powerupTimeout;
     [SerializeField] float powerupInitiated;
 
@@ -34,9 +38,16 @@ public class PackageBehaviour : MonoBehaviour
             PlayerHeal(10);
             Debug.Log(GameManager.gameManager._playerHealth.Health);
         }
+
+        // Debug.Log("Is wet " + isWet);
+        if(isWet && (Time.time > wetInitiated + wetTimeout)) {
+            PlayerTakeDmg(wetDmg);
+            wetInitiated = Time.time;
+            Debug.Log("Taking wet damage: " + wetDmg);
+        }
     }
 
-    private void PlayerTakeDmg(int dmg)
+    public void PlayerTakeDmg(int dmg)
     {
         GameManager.gameManager._playerHealth.DmgUnit(dmg);
         //_healthbar.SetHealth(GameManager.gameManager._playerHealth.Health);
@@ -76,5 +87,10 @@ public class PackageBehaviour : MonoBehaviour
         isPowerupActive = false;
         powerupInitiated = 0f;
         powerupTimeout = 0f;
+    }
+
+    public void setIsWet(bool wet) {
+        wetInitiated = Time.time;
+        // isWet = wet;
     }
 }
