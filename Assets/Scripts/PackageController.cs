@@ -7,14 +7,17 @@ public class PackageController : MonoBehaviour
     Vector2 moveInput = Vector2.zero;
     Camera cam;
     Rigidbody rb;
-    [SerializeField] float speed = 10f;
+    [SerializeField] float speed = 45f;
+    [SerializeField] float maxAngularVelocity = 5f;
 
     private void Awake() {
         rb = GetComponent<Rigidbody>();
+        
         cam = Camera.main;
     }
 
     private void FixedUpdate() {
+        rb.maxAngularVelocity = maxAngularVelocity;
         move(moveInput.x, moveInput.y);
     }
 
@@ -24,6 +27,7 @@ public class PackageController : MonoBehaviour
         targetDirection = cam.transform.TransformDirection(targetDirection);
         targetDirection.y = 0.0f;
         rb.AddTorque(targetDirection * speed, ForceMode.Force);
+        
     }
 
     public void requestMove(Vector2 input)
