@@ -5,11 +5,13 @@ using UnityEngine;
 public class PackageController : MonoBehaviour
 {
     Vector2 moveInput = Vector2.zero;
+    Camera camera;
     Rigidbody rb;
     [SerializeField] float speed = 10f;
 
     private void Awake() {
         rb = GetComponent<Rigidbody>();
+        camera = Camera.main;
     }
 
     private void FixedUpdate() {
@@ -18,7 +20,10 @@ public class PackageController : MonoBehaviour
 
     void move(float inputx, float inputy)
     {
-        rb.AddTorque(new Vector3(inputx, 0, inputy) * speed, ForceMode.Force);
+        Vector3 targetDirection = new Vector3(inputx, 0f, inputy);
+        targetDirection = camera.transform.TransformDirection(targetDirection);
+        targetDirection.y = 0.0f;
+        rb.AddTorque(targetDirection * speed, ForceMode.Force);
     }
 
     public void requestMove(Vector2 input)
