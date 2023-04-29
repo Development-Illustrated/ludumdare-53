@@ -8,12 +8,14 @@ public class ConveyorBelt : MonoBehaviour
     [SerializeField] float movementSpeed;
     [SerializeField] Vector3 direction;
     [SerializeField] List<GameObject> objOnBelt;
+    [SerializeField] bool isEnabled = false;
 
     void Update()
     {
-        if(objOnBelt.Count > 0)
+        if (!isEnabled) return;
+        if (objOnBelt.Count > 0)
         {
-            for(int i = 0; i < objOnBelt.Count; i++)
+            for (int i = 0; i < objOnBelt.Count; i++)
             {
                 objOnBelt[i].GetComponent<Rigidbody>().AddForce(movementSpeed * direction.x,
                     movementSpeed * direction.y,
@@ -37,5 +39,10 @@ public class ConveyorBelt : MonoBehaviour
         {
             objOnBelt.Remove(collision.gameObject);
         }
+    }
+
+    public void TurnOn()
+    {
+        if (!isEnabled) isEnabled = true;
     }
 }
