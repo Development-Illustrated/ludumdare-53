@@ -10,6 +10,9 @@ public class Powerup : MonoBehaviour
     private void OnCollisionEnter(Collision collision)
     {
         collision.gameObject.SendMessage(powerupName);
-        GetComponent<AudioSource>().Play();
+        if(GetComponent<AudioSource>() != null)
+        {
+            GetComponent<AudioSource>().Play();
+        }
     }
 }
