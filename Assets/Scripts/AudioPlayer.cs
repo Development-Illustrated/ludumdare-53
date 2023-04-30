@@ -39,8 +39,11 @@ public class AudioPlayer : MonoBehaviour
 
     public void pickAndPlayNewSound()
     {
-        audioSource.clip = getRandomAudioClip();
-        play();
+        AudioClip newClip = getRandomAudioClip();
+        if (!audioSource.clip || audioSource.clip != newClip) {
+            audioSource.clip = newClip;
+            play();
+        }
     }
 
     public void stop()
