@@ -14,9 +14,16 @@ public class PlayerController : MonoBehaviour
     protected Camera cam;
     protected Rigidbody rb;
 
+    protected bool isGrounded;
+
     private void Awake() {
         rb = GetComponent<Rigidbody>();
         cam = Camera.main;
+    }
+
+    private void Update() 
+    {
+        checkGrounded();
     }
 
     public void requestMove(Vector2 input)
@@ -41,5 +48,11 @@ public class PlayerController : MonoBehaviour
         torqueForce = 150f;
         maxAngularVelocity = 5f;
         GetComponent<Collider>().material.bounciness = 0f;
+    }
+
+    void checkGrounded()
+    {
+        Debug.DrawRay(transform.position, -Vector3.up * (GetComponent<Collider>().bounds.extents.y + 0.1f), Color.red);
+        isGrounded = Physics.Raycast(transform.position, -Vector3.up, GetComponent<Collider>().bounds.extents.y + 0.1f);
     }
 }

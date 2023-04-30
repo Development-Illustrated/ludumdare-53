@@ -17,12 +17,14 @@ public class PackageInput : MonoBehaviour
 
     public void OnMove(InputValue value)
     {
-        if(debugMode)
-        {
-            Debug.Log("OnMove called");
-        }
-        
+        if(debugMode){Debug.Log("OnMove called");}
         this.gameObject.SendMessage("requestMove", value.Get<Vector2>());
+    }
+
+    public void OnJump()
+    {
+        if(debugMode){Debug.Log("OnJump Called");}
+        this.gameObject.SendMessage("requestJump");
     }
 
     public void OnBuddahMode()
