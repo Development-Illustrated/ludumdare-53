@@ -27,13 +27,13 @@ public class PackageBehaviour : MonoBehaviour
     public void PlayerTakeDmg(int dmg)
     {
         GameManager.gameManager._playerHealth.DmgUnit(dmg);
-        _healthbar.SetHealth(GameManager.gameManager._playerHealth.Health);
+        //_healthbar.SetHealth(GameManager.gameManager._playerHealth.Health);
     }
 
     private void PlayerHeal(int healing)
     {
         GameManager.gameManager._playerHealth.HealUnit(healing);
-        _healthbar.SetHealth(GameManager.gameManager._playerHealth.Health);
+        //_healthbar.SetHealth(GameManager.gameManager._playerHealth.Health);
     }
 
     public void Zoomies()
