@@ -22,19 +22,6 @@ public class PackageBehaviour : MonoBehaviour
         {
             Reset();
         }
-
-        if (Input.GetKeyDown(KeyCode.Space))
-        {
-            PlayerTakeDmg(20);
-            Debug.Log(GameManager.gameManager._playerHealth.Health);
-        }
-
-        if (Input.GetKeyDown(KeyCode.LeftShift))
-        {
-            PlayerHeal(10);
-            Debug.Log(GameManager.gameManager._playerHealth.Health);
-
-        }
     }
 
     public void PlayerTakeDmg(int dmg)
