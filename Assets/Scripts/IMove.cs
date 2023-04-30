@@ -14,6 +14,8 @@ public class IMove : MonoBehaviour
     [SerializeField] Vector3 movementDirection = Vector3.up;
     [SerializeField] bool isOn = true;
 
+    AudioPlayer audioPlayer;
+
     bool goingUp = true;
     bool isPaused = false;
 
@@ -22,7 +24,7 @@ public class IMove : MonoBehaviour
 
     void Start() 
     {
-        
+        audioPlayer = GetComponent<AudioPlayer>();
     }
 
     void Update()
@@ -38,7 +40,12 @@ public class IMove : MonoBehaviour
         checkPause();
         if(!isPaused)
         {
+            audioPlayer.play();
             move();
+        }
+        else
+        {
+            audioPlayer.stop();
         }
 
         if(debugMode)
