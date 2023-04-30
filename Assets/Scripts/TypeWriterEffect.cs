@@ -5,7 +5,7 @@ using TMPro;
 
 public class TypeWriterEffect : MonoBehaviour
 {
-    [SerializeField] float delay = 0.1f;
+    [SerializeField] float delay = 0.05f;
     public string fullText;
     TextMeshProUGUI text;
     AudioPlayer audioPlayer;
@@ -28,7 +28,7 @@ public class TypeWriterEffect : MonoBehaviour
 
     IEnumerator ShowText()
     {
-        for (int i = 0; i < fullText.Length; i++)
+        for (int i = 0; i <= fullText.Length; i++)
         {
             currentText = fullText.Substring(0, i);
             text.text = currentText;
