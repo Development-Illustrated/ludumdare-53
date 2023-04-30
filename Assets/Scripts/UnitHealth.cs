@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class UnitHealth 
 {
@@ -46,6 +47,12 @@ public class UnitHealth
         if (_currentHealth > 0)
         {
             _currentHealth -= dmgAmount;
+        }
+
+        if(_currentHealth <= 0)
+        {
+            // fucekd.
+            SceneManager.LoadScene("DeathScene");
         }
     }
 
