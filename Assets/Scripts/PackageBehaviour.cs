@@ -10,10 +10,12 @@ public class PackageBehaviour : MonoBehaviour
     [SerializeField] bool isPowerupActive;
     [SerializeField] float powerupTimeout;
     [SerializeField] float powerupInitiated;
+    AudioPlayer audioPlayer;
 
     private void Awake()
     {
         playerController = GetComponent<PackageController>();
+        audioPlayer = GetComponent<AudioPlayer>();
     }
 
     void Update()
@@ -64,5 +66,10 @@ public class PackageBehaviour : MonoBehaviour
         isPowerupActive = false;
         powerupInitiated = 0f;
         powerupTimeout = 0f;
+    }
+
+    private void OnCollisionEnter(Collision other) 
+    {
+        audioPlayer.playRandomOneShot();
     }
 }

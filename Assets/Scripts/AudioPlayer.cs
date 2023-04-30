@@ -41,4 +41,11 @@ public class AudioPlayer : MonoBehaviour
     {
         audioSource.Stop();
     }
+
+    public void playRandomOneShot()
+    {
+        AudioClip clip = getRandomAudioClip();
+        if(debugMode){Debug.Log("Playing " + clip.name);}
+        audioSource.PlayOneShot(clip);
+    }
 }
