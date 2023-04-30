@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 1170520573279146259}
   - component: {fileID: 2851163218084634294}
   - component: {fileID: 33120171355335292}
-  - component: {fileID: 4722599803976660053}
+  - component: {fileID: 5666500648269704196}
   m_Layer: 0
   m_Name: Wood_Sheeeeeeeeeet
   m_TagString: Untagged
@@ -27,8 +27,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1978583195362741161}
   m_LocalRotation: {x: -0, y: 0.7071068, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: 411.15942, y: 11.596912, z: 36.541}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: 411.15942, y: 11.596912, z: 36.5786}
+  m_LocalScale: {x: 0.9763, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -85,7 +85,7 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!65 &4722599803976660053
+--- !u!65 &5666500648269704196
 BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -96,5 +96,5 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1.961995, y: 0.083578974, z: 3.1721509}
+  m_Size: {x: 3.1721509, y: 0.083578974, z: 1.961995}
   m_Center: {x: 0, y: 0, z: 0}
