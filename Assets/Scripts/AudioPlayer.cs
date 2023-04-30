@@ -37,6 +37,12 @@ public class AudioPlayer : MonoBehaviour
         audioSource.Play();
     }
 
+    public void pickAndPlayNewSound()
+    {
+        audioSource.clip = getRandomAudioClip();
+        play();
+    }
+
     public void stop()
     {
         audioSource.Stop();
