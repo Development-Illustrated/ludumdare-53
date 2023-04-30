@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 541704574648191946}
   - component: {fileID: 541704574648191947}
   - component: {fileID: 541704574648191948}
-  - component: {fileID: 541704574648191944}
+  - component: {fileID: 1786603983}
   m_Layer: 0
   m_Name: Button
   m_TagString: Untagged
@@ -29,7 +29,7 @@ Transform:
   m_GameObject: {fileID: 541704574648191945}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0.5, z: 4.03}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 543450653430261959}
@@ -99,8 +99,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   objectToEnable: {fileID: 0}
---- !u!65 &541704574648191944
-BoxCollider:
+--- !u!64 &1786603983
+MeshCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -109,9 +109,10 @@ BoxCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 4.9181294, y: 1.748394, z: 4.4808664}
-  m_Center: {x: -0.258353, y: 0.8153782, z: 0.10983801}
+  serializedVersion: 4
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -5447036705194824928, guid: a069a04ce43cf174281cc11dac56ae75, type: 3}
 --- !u!1001 &269963052
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -127,17 +128,17 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: a069a04ce43cf174281cc11dac56ae75,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.05
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: a069a04ce43cf174281cc11dac56ae75,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.5551429
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: a069a04ce43cf174281cc11dac56ae75,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0.14
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: a069a04ce43cf174281cc11dac56ae75,
         type: 3}
@@ -147,17 +148,17 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: a069a04ce43cf174281cc11dac56ae75,
         type: 3}
       propertyPath: m_LocalRotation.x
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: a069a04ce43cf174281cc11dac56ae75,
         type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: a069a04ce43cf174281cc11dac56ae75,
         type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: a069a04ce43cf174281cc11dac56ae75,
         type: 3}
