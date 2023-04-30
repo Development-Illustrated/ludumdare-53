@@ -5,17 +5,30 @@ using UnityEngine;
 public class Puddle : MonoBehaviour
 {
     private PackageBehaviour player;
+    private IEnumerator coroutine;
+    [SerializeField] float delay = 1f;
+    [SerializeField] int dmg = 5;
 
+    private void Awake() {
+    }
 
     public void OnTriggerEnter(Collider col) {
-        Debug.Log("Entering Water");
         player = col.gameObject.GetComponent<PackageBehaviour>();
-        player.setIsWet(true);
+        coroutine = TakeDamage();
+        StartCoroutine(coroutine);
     }
 
     public void OnTriggerExit() {
-        Debug.Log("Exiting Water");
-        player.setIsWet(false);
+        StopCoroutine(coroutine);
+    }
+
+    IEnumerator TakeDamage() {
+        while(true) {
+            player.PlayerTakeDmg(dmg);
+        
+            Debug.Log("Taking damage");
+            yield return new WaitForSeconds(delay);
+        }
     }
 }
 
