@@ -9,13 +9,10 @@ public class NPC : MonoBehaviour
 
     [SerializeField] GameObject dialogueBox;
     [SerializeField] TypeWriterEffect typeWriterEffect;
-    AudioSource audioSource;
-
-    private void Start() {
-        audioSource = GetComponent<AudioSource>();
+    private void Start() 
+    {
         dialogueBox.SetActive(false);
         typeWriterEffect.fullText = dialogueLine;
-        typeWriterEffect.audioSource = audioSource;
     }
 
     private void OnTriggerEnter(Collider other) 

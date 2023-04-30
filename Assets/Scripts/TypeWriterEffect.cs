@@ -8,21 +8,22 @@ public class TypeWriterEffect : MonoBehaviour
     [SerializeField] float delay = 0.1f;
     public string fullText;
     TextMeshProUGUI text;
-    public AudioSource audioSource;
+    AudioPlayer audioPlayer;
     string currentText = "";
 
     private void Awake() {
         text = GetComponentInChildren<TextMeshProUGUI>();
+        audioPlayer = GetComponent<AudioPlayer>();
     }
 
     public void StartText() {
-        audioSource.Play();
+        audioPlayer.play();
         StartCoroutine(ShowText());
     }
 
     public void Clear() {
         text.text = "";
-        audioSource.Stop();
+        audioPlayer.stop();
     }
 
     IEnumerator ShowText()
@@ -33,6 +34,6 @@ public class TypeWriterEffect : MonoBehaviour
             text.text = currentText;
             yield return new WaitForSeconds(delay);
         }
-        audioSource.Stop();
+        audioPlayer.stop();
     }
 }
