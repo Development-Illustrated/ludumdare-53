@@ -1,5 +1,61 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!1 &1787239032
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1787239033}
+  - component: {fileID: 1787239034}
+  m_Layer: 0
+  m_Name: BallSpaffer
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 2147483647
+  m_IsActive: 1
+--- !u!4 &1787239033
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1787239032}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 3664390342345564005}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1787239034
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1787239032}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ab3da0c37342b284595cbd1524ec01ef, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ballPrefabs: []
+  ballSpawnHeight: 3
+  ballSpawnDistance: 3
+  ballSpawnForce: 100
+  ballSpawnTorque: 100
+  ballSpawnRate: 0.5
+  ballSpawnMax: 100
+  ballSpawnMaxDelay: 5
+  ballSpawnMinDelay: 0.1
+  ballSpawnDelayDecrease: 0.1
+  ballSpawnMaxForce: 100
+  ballSpawnMaxTorque: 100
 --- !u!1 &3841639645860262194
 GameObject:
   m_ObjectHideFlags: 0
@@ -15,7 +71,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &3841639645860262205
 Transform:
@@ -58,12 +114,13 @@ GameObject:
   - component: {fileID: 2490960388967818250}
   - component: {fileID: 3841639646142167178}
   - component: {fileID: 3841639646142167176}
+  - component: {fileID: 1206125365}
   m_Layer: 0
   m_Name: Bouncy Balls
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &3664390342345564005
 Transform:
@@ -72,12 +129,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4148192623830582751}
-  m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 13.124901, y: 2.8995788, z: -2.1028633}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 3841639645860262205}
+  - {fileID: 1787239033}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -164,3 +222,32 @@ MonoBehaviour:
   bounceForce: 100
   bounceDirection: {x: 0, y: 1, z: 0}
   debugMode: 0
+--- !u!114 &1206125365
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4148192623830582751}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ab3da0c37342b284595cbd1524ec01ef, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ballPrefabs:
+  - {fileID: 4364168214758330162, guid: 66e6987cb4e63e849b9cd7d988b9640b, type: 3}
+  - {fileID: 6022164348279230952, guid: 0869d33cc7123eb46ba59dbc15270fff, type: 3}
+  - {fileID: 5935079316200349479, guid: 52b00d9c9a128df42af2b533358e6db3, type: 3}
+  - {fileID: 4704877221067182906, guid: 64d97e2b642382649812581973f4f16c, type: 3}
+  - {fileID: 369856857941409019, guid: 45367be315ddcfd4198ce1c8436e28f8, type: 3}
+  ballSpawnHeight: 3
+  ballSpawnDistance: 3
+  ballSpawnForce: 100
+  ballSpawnTorque: 100
+  ballSpawnRate: 0.5
+  ballSpawnMax: 100
+  ballSpawnMaxDelay: 5
+  ballSpawnMinDelay: 0.1
+  ballSpawnDelayDecrease: 0.1
+  ballSpawnMaxForce: 100
+  ballSpawnMaxTorque: 100

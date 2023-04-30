@@ -14,7 +14,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &2083806682422081332
 Transform:
@@ -104,6 +104,21 @@ PrefabInstance:
       propertyPath: m_Name
       value: Shelf
       objectReference: {fileID: 0}
+    - target: {fileID: 3011622603107175810, guid: 43a780143c40c824396012caf35fc8d0,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 3352477546526704311, guid: 43a780143c40c824396012caf35fc8d0,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 6763408945381372099, guid: 43a780143c40c824396012caf35fc8d0,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 43a780143c40c824396012caf35fc8d0, type: 3}
 --- !u!4 &2345916087958860249 stripped
@@ -178,6 +193,21 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Shelf (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3011622603107175810, guid: 43a780143c40c824396012caf35fc8d0,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 3352477546526704311, guid: 43a780143c40c824396012caf35fc8d0,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 6763408945381372099, guid: 43a780143c40c824396012caf35fc8d0,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 43a780143c40c824396012caf35fc8d0, type: 3}
@@ -254,6 +284,21 @@ PrefabInstance:
       propertyPath: m_Name
       value: Shelf (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 3011622603107175810, guid: 43a780143c40c824396012caf35fc8d0,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 3352477546526704311, guid: 43a780143c40c824396012caf35fc8d0,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 6763408945381372099, guid: 43a780143c40c824396012caf35fc8d0,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 43a780143c40c824396012caf35fc8d0, type: 3}
 --- !u!4 &7407922692384508214 stripped
@@ -328,6 +373,21 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Shelf (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3011622603107175810, guid: 43a780143c40c824396012caf35fc8d0,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 3352477546526704311, guid: 43a780143c40c824396012caf35fc8d0,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 6763408945381372099, guid: 43a780143c40c824396012caf35fc8d0,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 43a780143c40c824396012caf35fc8d0, type: 3}
@@ -404,6 +464,21 @@ PrefabInstance:
       propertyPath: m_Name
       value: Shelf (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 3011622603107175810, guid: 43a780143c40c824396012caf35fc8d0,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 3352477546526704311, guid: 43a780143c40c824396012caf35fc8d0,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 6763408945381372099, guid: 43a780143c40c824396012caf35fc8d0,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 43a780143c40c824396012caf35fc8d0, type: 3}
 --- !u!4 &8407550023119412877 stripped
@@ -478,6 +553,21 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Shelf (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3011622603107175810, guid: 43a780143c40c824396012caf35fc8d0,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 3352477546526704311, guid: 43a780143c40c824396012caf35fc8d0,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 6763408945381372099, guid: 43a780143c40c824396012caf35fc8d0,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 43a780143c40c824396012caf35fc8d0, type: 3}

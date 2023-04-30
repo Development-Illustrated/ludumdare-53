@@ -12,6 +12,7 @@ public class IMove : MonoBehaviour
     [SerializeField] float startDelay = 0f;
 
     [SerializeField] Vector3 movementDirection = Vector3.up;
+    [SerializeField] bool isOn = true;
 
     bool goingUp = true;
     bool isPaused = false;
@@ -26,6 +27,7 @@ public class IMove : MonoBehaviour
 
     void Update()
     {
+        if(!isOn) return;
         if(startDelay > 0f && timeUntilStart <= startDelay)
         {
             timeUntilStart += Time.deltaTime;
@@ -88,5 +90,10 @@ public class IMove : MonoBehaviour
         {
             transform.Translate(-movementDirection * speed * Time.deltaTime);
         }
+    }
+
+    public void TurnOn()
+    {
+        isOn = true;
     }
 }

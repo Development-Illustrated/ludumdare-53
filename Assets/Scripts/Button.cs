@@ -8,6 +8,9 @@ public class Button : MonoBehaviour
 
     private void OnCollisionEnter(Collision collision)
     {
-        objectToEnable.SendMessage("TurnOn");
+        if(collision.gameObject.tag == "Player")
+        {
+            objectToEnable.SendMessage("TurnOn");
+        }
     }
 }
