@@ -202,7 +202,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Jump: Space/A'
+  m_text: 'Pop: Space/A'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8b9aec33b2f9b0044a6209acadf71ffb, type: 2}
   m_sharedMaterial: {fileID: -5494426892599057585, guid: 8b9aec33b2f9b0044a6209acadf71ffb,
