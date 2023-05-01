@@ -959,6 +959,17 @@ PrefabInstance:
       propertyPath: m_Name
       value: Puddle (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 5024376587307865715, guid: 9b3289a46557d4b01bb108509a91f1c5,
+        type: 3}
+      propertyPath: m_Volume
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5024376587307865715, guid: 9b3289a46557d4b01bb108509a91f1c5,
+        type: 3}
+      propertyPath: OutputAudioMixerGroup
+      value: 
+      objectReference: {fileID: -8886545693893781056, guid: 15a58e315b49ab344a852dba003e9e2e,
+        type: 2}
     - target: {fileID: 7634732747508423633, guid: 9b3289a46557d4b01bb108509a91f1c5,
         type: 3}
       propertyPath: m_LocalScale.x
@@ -2907,6 +2918,17 @@ PrefabInstance:
       propertyPath: m_Name
       value: Puddle (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 5024376587307865715, guid: 9b3289a46557d4b01bb108509a91f1c5,
+        type: 3}
+      propertyPath: m_Volume
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5024376587307865715, guid: 9b3289a46557d4b01bb108509a91f1c5,
+        type: 3}
+      propertyPath: OutputAudioMixerGroup
+      value: 
+      objectReference: {fileID: -8886545693893781056, guid: 15a58e315b49ab344a852dba003e9e2e,
+        type: 2}
     - target: {fileID: 7634732747508423633, guid: 9b3289a46557d4b01bb108509a91f1c5,
         type: 3}
       propertyPath: m_LocalScale.z
@@ -4306,6 +4328,17 @@ PrefabInstance:
       propertyPath: m_Name
       value: Puddle
       objectReference: {fileID: 0}
+    - target: {fileID: 5024376587307865715, guid: 9b3289a46557d4b01bb108509a91f1c5,
+        type: 3}
+      propertyPath: m_Volume
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5024376587307865715, guid: 9b3289a46557d4b01bb108509a91f1c5,
+        type: 3}
+      propertyPath: OutputAudioMixerGroup
+      value: 
+      objectReference: {fileID: -8886545693893781056, guid: 15a58e315b49ab344a852dba003e9e2e,
+        type: 2}
     - target: {fileID: 7634732747508423633, guid: 9b3289a46557d4b01bb108509a91f1c5,
         type: 3}
       propertyPath: m_LocalScale.x
@@ -5097,7 +5130,7 @@ PrefabInstance:
     - target: {fileID: 6797770257235774029, guid: f9835926b4ecb420a8a4e03ca9cf3a3a,
         type: 3}
       propertyPath: m_Volume
-      value: 0.5
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f9835926b4ecb420a8a4e03ca9cf3a3a, type: 3}
@@ -5341,7 +5374,7 @@ PrefabInstance:
     - target: {fileID: 2071364643482722207, guid: d46679b107906ae408558c4fe10f7bca,
         type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0.11371679
+      value: 0.113716796
       objectReference: {fileID: 0}
     - target: {fileID: 2071364643482722207, guid: d46679b107906ae408558c4fe10f7bca,
         type: 3}
@@ -5351,7 +5384,7 @@ PrefabInstance:
     - target: {fileID: 2071364643482722207, guid: d46679b107906ae408558c4fe10f7bca,
         type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0.13450778
+      value: -0.13450779
       objectReference: {fileID: 0}
     - target: {fileID: 2071364643909403786, guid: d46679b107906ae408558c4fe10f7bca,
         type: 3}
@@ -5371,7 +5404,7 @@ PrefabInstance:
     - target: {fileID: 2071364643909403786, guid: d46679b107906ae408558c4fe10f7bca,
         type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0.6290723
+      value: 0.62907237
       objectReference: {fileID: 0}
     - target: {fileID: 2071364643909403786, guid: d46679b107906ae408558c4fe10f7bca,
         type: 3}
@@ -5506,7 +5539,7 @@ PrefabInstance:
     - target: {fileID: 2071364644778109482, guid: d46679b107906ae408558c4fe10f7bca,
         type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0.13450778
+      value: -0.13450779
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d46679b107906ae408558c4fe10f7bca, type: 3}
@@ -9854,6 +9887,17 @@ PrefabInstance:
       propertyPath: m_Name
       value: Puddle (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 5024376587307865715, guid: 9b3289a46557d4b01bb108509a91f1c5,
+        type: 3}
+      propertyPath: m_Volume
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5024376587307865715, guid: 9b3289a46557d4b01bb108509a91f1c5,
+        type: 3}
+      propertyPath: OutputAudioMixerGroup
+      value: 
+      objectReference: {fileID: -8886545693893781056, guid: 15a58e315b49ab344a852dba003e9e2e,
+        type: 2}
     - target: {fileID: 7634732747508423633, guid: 9b3289a46557d4b01bb108509a91f1c5,
         type: 3}
       propertyPath: m_LocalScale.x
@@ -11540,6 +11584,17 @@ PrefabInstance:
       propertyPath: m_Name
       value: AudioManager
       objectReference: {fileID: 0}
+    - target: {fileID: 3569449212908702080, guid: b5087e1024dad4c7f9470bbefa01662a,
+        type: 3}
+      propertyPath: m_Volume
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3569449212908702080, guid: b5087e1024dad4c7f9470bbefa01662a,
+        type: 3}
+      propertyPath: OutputAudioMixerGroup
+      value: 
+      objectReference: {fileID: -2762467760093978344, guid: 15a58e315b49ab344a852dba003e9e2e,
+        type: 2}
     - target: {fileID: 7404424257636807886, guid: b5087e1024dad4c7f9470bbefa01662a,
         type: 3}
       propertyPath: m_RootOrder

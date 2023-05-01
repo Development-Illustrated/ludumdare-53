@@ -75,7 +75,8 @@ AudioSource:
   m_GameObject: {fileID: 4327469667084679282}
   m_Enabled: 1
   serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
+  OutputAudioMixerGroup: {fileID: -4369866569329095939, guid: 15a58e315b49ab344a852dba003e9e2e,
+    type: 2}
   m_audioClip: {fileID: 0}
   m_PlayOnAwake: 0
   m_Volume: 1
@@ -174,9 +175,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dc572900d53a04dd181a370bdbf23e26, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  minDelay: 300
-  maxDelay: 600
-  delayTime: 300
+  minDelay: 200
+  maxDelay: 400
+  delayTime: 200
   nextPlayTime: 0
 --- !u!164 &1694881707
 AudioReverbFilter:

@@ -94,6 +94,7 @@ MonoBehaviour:
   powerupInitiated: 0
   drybox: {fileID: 8024912931279590466}
   soggybox: {fileID: 919132149356540787}
+  fucked: {fileID: 0}
 --- !u!54 &7178559800710505251
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -258,7 +259,8 @@ AudioSource:
   m_GameObject: {fileID: 7178559800710505437}
   m_Enabled: 1
   serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
+  OutputAudioMixerGroup: {fileID: -1162594691821938412, guid: 15a58e315b49ab344a852dba003e9e2e,
+    type: 2}
   m_audioClip: {fileID: 0}
   m_PlayOnAwake: 1
   m_Volume: 1
