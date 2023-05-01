@@ -95,6 +95,8 @@ MonoBehaviour:
   drybox: {fileID: 8024912931279590466}
   soggybox: {fileID: 919132149356540787}
   fucked: {fileID: 0}
+  screenFlashyShitStuff: {fileID: 0}
+  flashDuration: 0.5
 --- !u!54 &7178559800710505251
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -434,6 +436,16 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -6093592463355912122, guid: dd08a20d0f97942448f74cdae3a95380,
+        type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -678588488315902003, guid: dd08a20d0f97942448f74cdae3a95380,
+        type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: dd08a20d0f97942448f74cdae3a95380,
         type: 3}
       propertyPath: m_Name
@@ -518,6 +530,16 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: e4a7c8c714a11074087c4744851155c6,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8143710011712545758, guid: e4a7c8c714a11074087c4744851155c6,
+        type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -7664728788398519507, guid: e4a7c8c714a11074087c4744851155c6,
+        type: 3}
+      propertyPath: m_CastShadows
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -2045257923548263128, guid: e4a7c8c714a11074087c4744851155c6,
