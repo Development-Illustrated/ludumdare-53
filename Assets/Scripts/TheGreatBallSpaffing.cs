@@ -10,7 +10,6 @@ public class TheGreatBallSpaffing : MonoBehaviour
     [SerializeField] float ballSpawnForce = 100f;
     [SerializeField] float ballSpawnTorque = 100f;
     [SerializeField] float ballSpawnRate = 0.5f;
-    [SerializeField] float ballSpawnMax = 100f;
     [SerializeField] float ballSpawnMaxDelay = 5f;
     [SerializeField] float ballSpawnMinDelay = 0.1f;
     [SerializeField] float ballSpawnDelayDecrease = 0.1f;
@@ -21,6 +20,12 @@ public class TheGreatBallSpaffing : MonoBehaviour
 
     private void Update()
     {
+        if(ballPrefabs.Count == 0)
+        {
+            Debug.LogWarning("No ball prefabs assigned to TheGreatBallSpaffing.cs");
+            return;
+        }
+        
         if(ballSpawnTimer > 0f)
         {
             ballSpawnTimer -= Time.deltaTime;
