@@ -8,12 +8,17 @@ public class PackageBehaviour : MonoBehaviour
     [SerializeField] bool isPowerupActive;
     [SerializeField] float powerupTimeout;
     [SerializeField] float powerupInitiated;
+    [SerializeField] GameObject drybox;
+    [SerializeField] GameObject soggybox;
 
     PackageController playerController;
     AudioPlayer audioPlayer;
+    
 
     private void Awake()
     {
+        drybox.SetActive(true);
+        soggybox.SetActive(false);
         playerController = GetComponent<PackageController>();
         audioPlayer = GetComponent<AudioPlayer>();
     }
@@ -26,16 +31,34 @@ public class PackageBehaviour : MonoBehaviour
         }
     }
 
-    public void PlayerTakeDmg(int dmg)
+    public void PlayerTakeDmg(int dmg, string dmgType)
     {
         GameManager.gameManager._playerHealth.DmgUnit(dmg);
-        _healthbar.SetHealth(GameManager.gameManager._playerHealth.Health);
+        if(_healthbar != null)
+        {
+            _healthbar.SetHealth(GameManager.gameManager._playerHealth.Health);
+        }
+
+        if(dmgType == "water" && GameManager.gameManager._playerHealth.Health < 70)
+        {
+            switchToSoggy();
+        }
+    }
+
+    private void switchToSoggy()
+    {
+        Debug.Log("Box is soggy!");
+        drybox.SetActive(false);
+        soggybox.SetActive(true);
     }
 
     private void PlayerHeal(int healing)
     {
         GameManager.gameManager._playerHealth.HealUnit(healing);
-        _healthbar.SetHealth(GameManager.gameManager._playerHealth.Health);
+        if(_healthbar != null)
+        {
+            _healthbar.SetHealth(GameManager.gameManager._playerHealth.Health);
+        }
     }
 
     public void Zoomies()

@@ -27,7 +27,7 @@ public class Puddle : MonoBehaviour
 
     IEnumerator TakeDamage() {
         while(true) {
-            player.PlayerTakeDmg(dmg);
+            player.PlayerTakeDmg(dmg, "water");
         
             Debug.Log("Taking damage");
             yield return new WaitForSeconds(delay);
