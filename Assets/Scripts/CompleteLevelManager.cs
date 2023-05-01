@@ -6,6 +6,8 @@ using UnityEngine.SceneManagement;
 public class CompleteLevelManager : MonoBehaviour
 {
     [SerializeField] bool debugMode = false;
+    [SerializeField] GameObject winboi;
+    [SerializeField] TheGreatBallSpaffing theGreatBallSpaffing;
     private void OnTriggerEnter(Collider other) 
     {
         if(other.gameObject.tag == "Player")
@@ -23,7 +25,8 @@ public class CompleteLevelManager : MonoBehaviour
                     GameManager.gameManager.LoadWarehouse2();
                     break;
                 case "Warehouse2":
-                    GameManager.gameManager.LoadMainMenu();
+                    winboi.SetActive(true);
+                    theGreatBallSpaffing.enabled = true;
                     break;
             }
         }
