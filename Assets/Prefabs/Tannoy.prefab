@@ -175,9 +175,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dc572900d53a04dd181a370bdbf23e26, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  minDelay: 200
-  maxDelay: 400
-  delayTime: 200
+  minDelay: 60
+  maxDelay: 120
+  delayTime: 60
   nextPlayTime: 0
 --- !u!164 &1694881707
 AudioReverbFilter:
