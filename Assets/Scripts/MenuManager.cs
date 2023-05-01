@@ -20,6 +20,12 @@ public class MenuManager : MonoBehaviour
         SceneManager.LoadScene(scenename);
     }
 
+    public void OnRestartGame()
+    {
+        if (debugMode) { Debug.Log("Restart clicked"); }
+        GameManager.gameManager.ReloadScene();
+    }
+
     private void OnEnable() 
     {
         if(debugMode){Debug.Log("MenuManager enabled");}
