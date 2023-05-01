@@ -33,7 +33,7 @@
                     "initialStateCheck": false
                 },
                 {
-                    "name": "BuddahMode",
+                    "name": "OldBuddahMode",
                     "type": "Button",
                     "id": "6e017ded-c09c-4542-9c10-033606a76fb8",
                     "expectedControlType": "Button",
@@ -42,7 +42,7 @@
                     "initialStateCheck": false
                 },
                 {
-                    "name": "PackageMode",
+                    "name": "OldPackageMode",
                     "type": "Button",
                     "id": "5e5c826a-ca59-4825-ba98-8aedb599b466",
                     "expectedControlType": "Button",
@@ -288,7 +288,7 @@
                     "interactions": "",
                     "processors": "",
                     "groups": "",
-                    "action": "BuddahMode",
+                    "action": "OldBuddahMode",
                     "isComposite": false,
                     "isPartOfComposite": false
                 },
@@ -299,7 +299,7 @@
                     "interactions": "",
                     "processors": "",
                     "groups": "",
-                    "action": "BuddahMode",
+                    "action": "OldBuddahMode",
                     "isComposite": false,
                     "isPartOfComposite": false
                 },
@@ -310,7 +310,7 @@
                     "interactions": "",
                     "processors": "",
                     "groups": "",
-                    "action": "PackageMode",
+                    "action": "OldPackageMode",
                     "isComposite": false,
                     "isPartOfComposite": false
                 },
@@ -321,7 +321,7 @@
                     "interactions": "",
                     "processors": "",
                     "groups": "",
-                    "action": "PackageMode",
+                    "action": "OldPackageMode",
                     "isComposite": false,
                     "isPartOfComposite": false
                 },
