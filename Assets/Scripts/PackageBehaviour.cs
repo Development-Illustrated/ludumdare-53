@@ -35,7 +35,7 @@ public class PackageBehaviour : MonoBehaviour
             Reset();
         }
 
-        if(screenFlashyShitStuff.activeSelf && Time.time > flashStarted + flashDuration)
+        if(screenFlashyShitStuff && screenFlashyShitStuff.activeSelf && Time.time > flashStarted + flashDuration)
         {
             screenFlashyShitStuff.SetActive(false);
         }
@@ -48,7 +48,12 @@ public class PackageBehaviour : MonoBehaviour
         {
             _healthbar.SetHealth(GameManager.gameManager._playerHealth.Health);
             flashStarted = Time.time;
-            screenFlashyShitStuff.SetActive(true);
+
+            if(screenFlashyShitStuff)
+            {
+                screenFlashyShitStuff.SetActive(true);
+            }
+            
             
             if(GameManager.gameManager._playerHealth.Health <= 0)
             {
