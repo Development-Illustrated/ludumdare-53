@@ -10,7 +10,7 @@ public class TimerController : MonoBehaviour
 
     public Text timeCounter;
 
-    private TimeSpan timePlaying;
+    public TimeSpan timePlaying;
     private bool timerGoing;
 
     private float elapsedTime;

@@ -8,6 +8,7 @@ public class CompleteLevelManager : MonoBehaviour
     [SerializeField] bool debugMode = false;
     [SerializeField] GameObject winboi;
     [SerializeField] TheGreatBallSpaffing theGreatBallSpaffing;
+    [SerializeField] TimerController timerController;
     private void OnTriggerEnter(Collider other) 
     {
         if(other.gameObject.tag == "Player")
@@ -27,6 +28,7 @@ public class CompleteLevelManager : MonoBehaviour
                 case "Warehouse2":
                     winboi.SetActive(true);
                     theGreatBallSpaffing.enabled = true;
+                    timerController.EndTimer();
                     break;
             }
         }
