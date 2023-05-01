@@ -11,6 +11,10 @@ public class PackageBehaviour : MonoBehaviour
     [SerializeField] GameObject drybox;
     [SerializeField] GameObject soggybox;
     [SerializeField] GameObject fucked;
+    [SerializeField] GameObject screenFlashyShitStuff;
+    [SerializeField] float flashDuration = 0.5f;
+
+    float flashStarted;
 
     PackageController playerController;
     AudioPlayer audioPlayer;
@@ -30,6 +34,11 @@ public class PackageBehaviour : MonoBehaviour
         {
             Reset();
         }
+
+        if(screenFlashyShitStuff.activeSelf && Time.time > flashStarted + flashDuration)
+        {
+            screenFlashyShitStuff.SetActive(false);
+        }
     }
 
     public void PlayerTakeDmg(int dmg, string dmgType)
@@ -38,7 +47,9 @@ public class PackageBehaviour : MonoBehaviour
         if(_healthbar != null)
         {
             _healthbar.SetHealth(GameManager.gameManager._playerHealth.Health);
-
+            flashStarted = Time.time;
+            screenFlashyShitStuff.SetActive(true);
+            
             if(GameManager.gameManager._playerHealth.Health <= 0)
             {
                 fucked.SetActive(true);
