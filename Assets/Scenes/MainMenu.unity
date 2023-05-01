@@ -375,6 +375,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   scenename: PlaytestPlayground
   debugMode: 1
+  playerInput: {fileID: 0}
 --- !u!1 &695576882
 GameObject:
   m_ObjectHideFlags: 0
