@@ -38,4 +38,28 @@ public class PackageInput : MonoBehaviour
         if(debugMode){Debug.Log("OnPackageMode called");}
         controllerManager.SwitchController(ControllerManager.ControllerType.PackageController);
     }
+
+    public void OnRestartLevel()
+    {
+        if(debugMode){Debug.Log("OnRestartLevel called");}
+        GameManager.gameManager.ReloadScene();
+    }
+
+    public void OnSubmit()
+    {
+        if(GameManager.gameManager.gameState == GameManager.GameState.Menu)
+        {
+            if(debugMode){Debug.Log("OnSubmit called");}
+            GameManager.gameManager.ReloadScene();
+        }
+    }
+
+    public void OnCancel()
+    {
+        if(GameManager.gameManager.gameState == GameManager.GameState.Menu)
+        {
+            if(debugMode){Debug.Log("OnCancel called");}
+            GameManager.gameManager.LoadMainMenu();
+        }
+    }
 }

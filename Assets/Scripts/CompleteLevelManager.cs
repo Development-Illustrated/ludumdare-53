@@ -7,19 +7,12 @@ public class CompleteLevelManager : MonoBehaviour
 {
     [SerializeField] string scenename = "MainMenu";
     [SerializeField] bool debugMode = false;
-
-    public void LoadMainMenu()
-    {
-        if(debugMode){Debug.Log("Play button clicked");}
-        SceneManager.LoadScene(scenename);
-    }
-
     private void OnTriggerEnter(Collider other) 
     {
         if(other.gameObject.tag == "Player")
         {
-            if(debugMode){Debug.Log("Player entered trigger");}
-            LoadMainMenu();
+            if(debugMode){Debug.Log("Player finished level!");}
+            GameManager.gameManager.LoadMainMenu();
         }
     }
 }

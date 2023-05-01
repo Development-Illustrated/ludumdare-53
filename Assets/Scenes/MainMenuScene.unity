@@ -306,6 +306,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   scenename: Warehouse
   debugMode: 1
+  playerInput: {fileID: 143505743}
 --- !u!114 &37429992
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -908,7 +909,7 @@ MonoBehaviour:
     m_ActionName: UI/TrackedDeviceOrientation
   m_NeverAutoSwitchControlSchemes: 0
   m_DefaultControlScheme: 
-  m_DefaultActionMap: UI
+  m_DefaultActionMap: Player
   m_SplitScreenIndex: -1
   m_Camera: {fileID: 0}
 --- !u!4 &143505744
