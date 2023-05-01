@@ -16,7 +16,7 @@ public class IMove : MonoBehaviour
 
     AudioPlayer audioPlayer;
 
-    bool goingUp = true;
+    [SerializeField] bool goingUp = true;
     bool isPaused = false;
 
     float timePaused = 0f;
