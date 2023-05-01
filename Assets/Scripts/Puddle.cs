@@ -22,7 +22,10 @@ public class Puddle : MonoBehaviour
     }
 
     public void OnTriggerExit() {
-        StopCoroutine(coroutine);
+        if(coroutine != null)
+        {
+            StopCoroutine(coroutine);
+        }
     }
 
     IEnumerator TakeDamage() {
