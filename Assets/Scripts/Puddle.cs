@@ -13,9 +13,12 @@ public class Puddle : MonoBehaviour
     }
 
     public void OnTriggerEnter(Collider col) {
-        player = col.gameObject.GetComponent<PackageBehaviour>();
-        coroutine = TakeDamage();
-        StartCoroutine(coroutine);
+        if(col.gameObject.tag == "Player")
+        {
+            player = col.gameObject.GetComponent<PackageBehaviour>();
+            coroutine = TakeDamage();
+            StartCoroutine(coroutine);
+        }
     }
 
     public void OnTriggerExit() {

@@ -11,6 +11,8 @@ public class AudioPlayer : MonoBehaviour
     [SerializeField] float minRandomPitch = 0.7f;
     [SerializeField] float maxRandomPitch = 1.4f;
     [SerializeField] float volume = 1f;
+
+    bool isPlaying;
     
     AudioSource audioSource;
 
@@ -34,7 +36,11 @@ public class AudioPlayer : MonoBehaviour
 
     public void play()
     {
-        audioSource.Play();
+        if(!isPlaying)
+        {
+            audioSource.Play();
+            isPlaying = true;
+        }
     }
 
     public void pickAndPlayNewSound()
@@ -48,7 +54,10 @@ public class AudioPlayer : MonoBehaviour
 
     public void stop()
     {
-        audioSource.Stop();
+        if(isPlaying){
+            isPlaying = false;
+            audioSource.Stop();
+        }
     }
 
     public void playRandomOneShot()
