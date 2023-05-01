@@ -10,6 +10,7 @@ public class PackageBehaviour : MonoBehaviour
     [SerializeField] float powerupInitiated;
     [SerializeField] GameObject drybox;
     [SerializeField] GameObject soggybox;
+    [SerializeField] GameObject fucked;
 
     PackageController playerController;
     AudioPlayer audioPlayer;
@@ -37,6 +38,11 @@ public class PackageBehaviour : MonoBehaviour
         if(_healthbar != null)
         {
             _healthbar.SetHealth(GameManager.gameManager._playerHealth.Health);
+
+            if(GameManager.gameManager._playerHealth.Health <= 0)
+            {
+                fucked.SetActive(true);
+            }
         }
 
         if(dmgType == "water" && GameManager.gameManager._playerHealth.Health < 70)

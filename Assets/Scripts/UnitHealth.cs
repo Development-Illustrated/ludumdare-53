@@ -52,7 +52,7 @@ public class UnitHealth
         if(_currentHealth <= 0)
         {
             // fucekd.
-            SceneManager.LoadScene("DeathScene");
+            //SceneManager.LoadScene("DeathScene");
         }
     }
 
