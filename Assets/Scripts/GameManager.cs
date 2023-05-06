@@ -13,6 +13,8 @@ public class GameManager : MonoBehaviour
     }
 
     [SerializeField] public GameState gameState;
+    [SerializeField] public bool lockCursor = true;
+    [SerializeField] public bool hideCursor = true;
 
     public UnitHealth _playerHealth = new UnitHealth(100,100);
 
@@ -25,6 +27,18 @@ public class GameManager : MonoBehaviour
         else
         {
         gameManager = this;
+        }
+    }
+
+    private void Start() 
+    {
+        if(hideCursor)
+        {
+            Cursor.visible = false;
+        }
+        if(lockCursor)
+        {
+            Cursor.lockState = CursorLockMode.Locked;
         }
     }
 
